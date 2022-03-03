@@ -3,7 +3,7 @@ const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = config({
 
-  serviceWorker: true // 是否开启 PWA
+  serviceWorker: true, // 是否开启 PWA
   port: "8080",
   title: "fmiles",
   description: "Java个人博客",
