@@ -2,6 +2,8 @@ const { config } = require("vuepress-theme-hope");
 const CompressionPlugin = require("compression-webpack-plugin");
 
 module.exports = config({
+
+  serviceWorker: true // 是否开启 PWA
   port: "8080",
   title: "fmiles",
   description: "Java个人博客",
@@ -23,6 +25,9 @@ module.exports = config({
   },
 
   head: [
+	// 移动端相关配置
+	['link', { rel: 'manifest', href: '/photo.jpg' }],
+	['link', { rel: 'apple-touch-icon', href: '/photo.jpg' }],
     // 百度站点验证
     ["meta", { name: "baidu-site-verification", content: "code-IZvTs9l2OK" }],
     [
