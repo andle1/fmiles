@@ -73,17 +73,12 @@ module.exports = config({
           {
             title: "基础", prefix: "basis/",
              children: [
-              "BIO,NIO,AIO总结", "IO模型"
+             
 			 ]
           },
           {
             title: "容器", prefix: "collection/",
-            children: [
-              "java-collection-questions-01", "java-collection-questions-02", "java集合使用注意事项",
-              {
-                title: "源码分析",
-                children: ["arraylist-source-code", "hashmap-source-code", "concurrent-hash-map-source-code"],
-              },],
+            children: [],
           },
           {
             title: "并发编程", prefix: "concurrent/",
@@ -98,7 +93,24 @@ module.exports = config({
           },
           {
             title: "JVM", prefix: "jvm/",
-            children: ["memory-area", "jvm-garbage-collection", "class-file-structure", "class-loading-process", "classloader", "jvm-parameters-intro", "jvm-intro", "jdk-monitoring-and-troubleshooting-tools"],
+            children: [
+				{
+					title: "垃圾回收",prefix: "gc/",
+					children: ["gc"],
+				},
+				{
+					title: "字节码",prefix: "bytecode/",
+					children: [],
+				},
+				{
+					title: "类加载器",prefix: "classloader/",
+					children: [],
+				},
+				{
+					title: "内存",prefix: "memory/",
+					children: [],
+				}
+			],
           }
         ]
 		}]
