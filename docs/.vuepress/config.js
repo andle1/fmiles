@@ -9,6 +9,7 @@ module.exports = config({
   description: "Java个人博客",
   //指定 vuepress build 的输出目录
   dest: "./dist",
+  base: "/andle1/",
   // 是否开启默认预加载js
   shouldPrefetch: (file, type) => false,
 
